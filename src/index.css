@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-wine-bg text-wine-text font-poppins;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-6 py-3 rounded-lg bg-wine hover:bg-wine-light transition-colors duration-300 text-wine-text font-medium;
+  }
+  
+  .btn-secondary {
+    @apply px-6 py-3 rounded-lg border-2 border-wine hover:border-wine-light transition-colors duration-300 text-wine-text font-medium;
+  }
+  
+  .section-title {
+    @apply text-4xl md:text-5xl font-bold text-wine-text mb-8;
+  }
+  
+  .card {
+    @apply p-6 rounded-xl bg-wine-card/50 backdrop-blur-sm border border-wine/20;
+  }
+  
+  .progress-bar {
+    @apply w-full h-2 bg-wine-dark/20 rounded-full overflow-hidden;
+  }
+  
+  .progress-fill {
+    @apply h-full bg-wine-accent rounded-full;
+  }
+  
+  .glass-effect {
+    @apply backdrop-blur-sm bg-wine-card/30;
+  }
+}
